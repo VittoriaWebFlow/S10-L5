@@ -1,7 +1,8 @@
 .header-section {
-  width: 1000px;
+  width: auto;
   height: 70px;
-  margin: 40px auto;
+  margin: 40px;
+  
 
   padding: 30px 30px;
   display: flex;
@@ -40,7 +41,7 @@
 }
 
 .info {
- background: linear-gradient(106deg, #d8dce3, #0d5e685e);
+  background: linear-gradient(106deg, #d8dce3, #c3cacb5e);
 
   border: 0.1px solid rgb(131, 131, 131);
   border-radius: 0.3rem;
