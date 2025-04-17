@@ -33,16 +33,16 @@ const Tempapp = () => {
     <>
       <Container fluid={true}>
         <Row className="align-items-center">
-          <Col xs={3} md={6} lg={12}>
+          <Col xs={12} md={10} lg={12}>
             <section className="header-section d-flex justify-content-between align-items-center">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center d-none d-lg-block">
                 <i class="bi bi-geo-alt"></i>
-                <span className="ms-2">London, UK</span>
+                <span className="ms-2 me-3">London, UK</span>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center w-75 ">
                 <input
                   type="text"
-                  className="search text-center text-black rounded-2"
+                  className="search text-center text-black rounded-2 w-100"
                   placeholder="Search for a city"
                   value={search}
                   onChange={(e) => {
@@ -50,8 +50,8 @@ const Tempapp = () => {
                   }}
                 />
               </div>
-              <div className="d-flex align-items-center">
-                <i class="bi bi-calendar-date"></i>
+              <div className="d-flex align-items-center d-none d-lg-block">
+                <i class="bi bi-calendar-date ms-3"></i>
                 <i class="bi bi-bell ms-2"></i>
               </div>
             </section>
@@ -63,7 +63,7 @@ const Tempapp = () => {
           <Col xs={12} md={10} lg={8}>
             <div className="text-center mt-5">
               {city ? (
-                <div className="info ">
+                <div className="info">
                   <h2 className="location mb-4 mt-1">
                     <i class="fas fa-street-view mt-5"></i> {search}
                   </h2>
@@ -80,7 +80,7 @@ const Tempapp = () => {
                   <img
                     src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`}
                     alt="Weather Icon"
-                    className="weather-icon  "
+                    className="weather-icon"
                   />
                 </div>
               ) : (
