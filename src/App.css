@@ -1,0 +1,47 @@
+.header-section {
+  width: 1000px;
+  height: 70px;
+  margin: 40px auto;
+
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.3rem;
+  border: 1px solid rgb(180, 180, 201);
+}
+
+.header-section div:nth-child(2) input {
+  width: 600px;
+  padding: 13px 10px 13px 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: rgb(249, 251, 253);
+}
+
+.app {
+  background: linear-gradient(106deg, #211364, #ffdb105e);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.bi-calendar-date {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+.bi-geo-alt {
+  font-size: 1.5em;
+}
+
+.bi-bell {
+  font-size: 1.5em;
+}
+
+.info {
+  background: linear-gradient(106deg, #7a8463, #87bbc35e);
+
+  border: 0.1px solid rgb(131, 131, 131);
+  border-radius: 0.3rem;
+}
